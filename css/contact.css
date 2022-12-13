@@ -1,0 +1,187 @@
+@font-face {
+    font-family: "Raleway", sans-serif;
+    src: url('https://fonts.googleapis.com/css2?family=Raleway:wght@100;400&display=swap');
+}
+body {
+    padding: 0%;
+    margin: 0%;
+    min-height: 100%;
+    display: flex;
+    flex-direction: column;
+}
+html {
+    height: 100%;
+}
+header {
+    width: 100%;
+    height: auto;
+    border-bottom: 1px solid #000;
+    background: linear-gradient(180deg, #000000 0%, #3FA752 100%);
+}
+.header-content {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+.logo {
+    width: 9vh;
+}
+nav {
+    display: flex;
+    flex-direction: row;
+    gap: 5px;
+    font-size: 2.5vh;
+    text-decoration: none;
+}
+a {
+    text-decoration: none;
+    color: #000000;
+}
+.contact-img {
+    max-height: 80vh;
+    width: 100%;
+    display: block;
+    margin: 1vh auto;
+}
+h1 {
+    text-align: center;
+    margin: 1vw;
+    font-family: Raleway;
+    font-weight: 700;
+    font-size: 5vh;
+}
+p {
+    font-family: Raleway;
+    font-weight: 500;
+    font-size: 2vh;
+    text-align: center;
+    padding: 0vh 3vh;
+}
+input,
+textarea {
+    border: 1px solid grey;
+    border-radius: 10px;
+    margin: 10px 10px 10px 0px;
+    padding: 10px;
+    background: #F9FAFB;
+}
+label {
+    font-family: Raleway;
+}
+textarea {
+    height: 65%;
+    min-height: 150px;
+    min-width: 200px;
+}
+.contact {
+    max-width: 1000px;
+    margin: 50px auto;
+    text-align: center;
+}
+.checkbox-text {
+    margin-bottom: 10%;
+}
+.form-wrapper {
+    display: flex;
+    text-align: left;
+    flex-direction: column;
+}
+.form-wrapper > * {
+    display: flex;
+    flex-direction: column;
+}
+.submit-button {
+    background: #000;
+    color: #F9FAFB;
+    border-radius: 10px;
+    font-family: Raleway;
+    font-weight: 700;
+
+}
+.footer-section {
+    text-align: center;
+    font-family: Raleway;
+    font-size: 2vh;
+    background: #6ea477;
+    margin-top: 5vh;
+}
+.fa-facebook {
+    color: #3A599C;
+}
+.fa-instagram {
+    color: linear-gradient(180deg, #5E6AB4 0%, #F15F34 100%);
+}
+.fa-twitter {
+    color: #4099D3;
+}
+.fa-snapchat {
+    color: #F6EA00;
+    margin-bottom: 5vh;
+}
+.footer-logo {
+    width: 13vh;
+}
+.copyright-text {
+    text-align: center;
+    font-family: Raleway;
+    font-size: 2vh;
+}
+footer {
+    width: 100%;
+    height: 50px;
+    border-top: 1px solid #000;
+    background: linear-gradient(180deg, #3FA752 0%, #000000 100%);
+    margin-top: auto;
+}
+
+/* Media Queries */
+@media screen and (min-width: 670px) {
+.header-content {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    gap: 7vh;
+    padding: 0% 10%;
+}
+nav {
+font-size: 20px;
+}
+}
+@media screen and (min-width: 900px) {
+    .header-content {
+        display: flex;
+        flex-direction: row;
+        gap: 45vh;
+    }
+.footer-section {
+    display: flex;
+    flex-direction: row;
+    gap: 30vh;
+    align-items: center;
+    padding-left: 5%;
+    padding-right: 5%;
+}
+footer {
+    height: 80px;
+}
+}
+@media screen and (min-width: 1440px) {
+nav {
+    display: flex;
+    gap: 2rem;
+    font-size: 20px;
+    padding-left: 12%;
+}
+.contact-img {
+    height: 70vh;
+}
+p {
+    font-size: 24px;
+}
+label {
+    font-size: 24px;
+}
+.submit-button {
+    font-size: 24px;
+}
+}

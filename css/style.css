@@ -10,13 +10,22 @@ body {
     flex-direction: column;
 }
 html {
+    box-sizing: border-box;
     height: 100%;
+}
+html:focus-within {
+    scroll-behavior: smooth;
+}
+*,
+*::before,
+*::after {
+    box-sizing: inherit;
 }
 header {
     width: 100%;
     height: auto;
     border-bottom: 1px solid #000;
-    background-color: #fff;
+    background: linear-gradient(180deg, #000000 0%, #3FA752 100%);
 }
 .header-content {
     display: flex;
@@ -24,23 +33,32 @@ header {
     align-items: center;
 }
 .logo {
-    width: 50px;
+    width: 9vh;
 }
 nav {
     display: flex;
     flex-direction: row;
     gap: 5px;
     font-size: 15px;
+    text-decoration: none;
+}
+a {
+    text-decoration: none;
+    color: #000000;
 }
 h4 {
     text-align: center;
-    font-size: 14px;
-    margin: 2vw 1vw 2vw 1vw;
+    font-size: 2vh;
+    margin: 2vh 1vh 2vh 1vh;
+}
+.tickets-text {
+    color: #000;
+    text-decoration: underline;
 }
 .hero-image {
     width: 100%;
 }
-h1 {
+.page-title {
     text-align: center;
     margin: 1vw;
     font-family: Raleway;
@@ -56,8 +74,9 @@ margin: 1rem;
     text-align: center;
     font-family: Raleway;
     font-weight: 700;
-    font-size: 22px;
-
+    font-size: 4vh;
+    margin: 2rem 0rem 2rem 0rem;
+    padding: 1rem;
 }
 .exhibitions {
     display: flex;
@@ -86,7 +105,7 @@ margin: 1rem;
     margin-bottom: -2%;
 }
 .rectangle1 {
-    width: 99%;
+    width: 100%;
     background-color: #797171;
     border-radius: 0px 0px 10px 10px;
     padding-left: 1vw;
@@ -94,7 +113,7 @@ margin: 1rem;
     margin-bottom: 1vw;
 }
 .rectangle2 {
-    width: 99%;
+    width: 100%;
     background-color: #404041;
     border-radius: 0px 0px 10px 10px;
     padding-left: 1vw;
@@ -102,7 +121,7 @@ margin: 1rem;
     margin-bottom: 1vw;
 }
 .rectangle3 {
-    width: 99%;
+    width: 100%;
     background-color: #BDBB77;
     border-radius: 0px 0px 10px 10px;
     padding-left: 1vw;
@@ -110,7 +129,7 @@ margin: 1rem;
     margin-bottom: 1vw;
 }
 .rectangle4 {
-    width: 99%;
+    width: 100%;
     background-color: #607595;
     border-radius: 0px 0px 10px 10px;
     padding-left: 1vw;
@@ -119,9 +138,9 @@ margin: 1rem;
 }
 .ticket-title {
     font-family: Raleway;
-    font-weight: 600;
+    font-weight: 900;
     font-size: 20px;
-    text-align: left;
+    text-align: left
 }
 .ticket-date {
     font-family: Raleway;
@@ -132,9 +151,14 @@ margin: 1rem;
 .ticket-info {
     font-family: Raleway;
     font-weight: 400;
-    font-size: 2vh;
+    font-size: 12px;
     margin-top: 1vh;
     margin-bottom: 3vh;
+}
+.more-info {
+    font-family: Raleway;
+    font-size: 14px;
+    display: none;
 }
 .ticket-button1 {
     border-radius: 10px;
@@ -176,14 +200,237 @@ margin: 1rem;
     color: #607595;
     margin-bottom: 2vh;
 }
+.ticket-button5 {
+    border-radius: 10px;
+    padding: 5px 5px;
+    font-family: Raleway;
+    font-weight: 700;
+    font-size: 14px;
+    background-color: #fff;
+    color: #CCA038;
+    margin-bottom: 2vh;
+}
+.ticket-button6 {
+    border-radius: 10px;
+    padding: 5px 5px;
+    font-family: Raleway;
+    font-weight: 700;
+    font-size: 14px;
+    background-color: #fff;
+    color: #98999E;
+    margin-bottom: 2vh;
+}
+.ticket-button7 {
+    border-radius: 10px;
+    padding: 5px 5px;
+    font-family: Raleway;
+    font-weight: 700;
+    font-size: 14px;
+    background-color: #fff;
+    color: #B3C7D8;
+    margin-bottom: 2vh;
+}
+.events-h1 {
+    text-align: center;
+    font-family: Raleway;
+    font-weight: 700;
+    font-size: 4vh;
+    margin: 2rem 0rem 2rem 0rem;
+    padding: 1rem;
+}
+.events {
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
+    padding: 0vw 5vw 0vw 5vw;
+}
+.events-card1 {
+    background: #CCA038;
+    width: 100%;
+    border-radius: 10px;
+    text-align: center;
+}
+.events-card2 {
+    background: #98999E;
+    width: 100%;
+    border-radius: 10px;
+    text-align: center;
+}
+.events-card3 {
+    background: #B3C7D8;
+    width: 100%;
+    border-radius: 10px;
+    text-align: center;
+}
+.events-img {
+    width: 100%;
+    border-radius: 100px;
+}
+.events-title {
+    font-family: Raleway;
+    font-weight: 900;
+    font-size: 20px;
+}
+.events-ticket-info {
+    display: none;
+    font-family: Raleway;
+    font-weight: 400;
+    font-size: 14px;
+    margin-top: 1vh;
+    margin-bottom: 3vh;
+}
+.footer-section {
+    text-align: center;
+    font-family: Raleway;
+    font-size: 2vh;
+    background: #6ea477;
+    margin-top: 5vh;
+}
+.fa-facebook {
+    color: #3A599C;
+}
+.fa-instagram {
+    color: linear-gradient(180deg, #5E6AB4 0%, #F15F34 100%);
+}
+.fa-twitter {
+    color: #4099D3;
+}
+.fa-snapchat {
+    color: #F6EA00;
+    margin-bottom: 5vh;
+}
+.footer-logo {
+    width: 13vh;
+}
 .copyright-text {
     text-align: center;
-    padding-top: 1%;
+    font-family: Raleway;
+    font-size: 2vh;
 }
 footer {
     width: 100%;
     height: 50px;
     margin-top: auto;
     border-top: 1px solid #000;
-    background-color: #fff;
+    background: linear-gradient(180deg, #3FA752 0%, #000000 100%);
+}
+
+/* Media Queries */
+@media screen and (min-width: 670px) {
+.header-content {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    gap: 7vh;
+    padding: 0% 10%;
+    }
+
+nav {
+    font-size: 20px;
+}
+}
+
+@media screen and (min-width: 900px) {
+.header-content {
+    display: flex;
+    flex-direction: row;
+    gap: 45vh;
+}
+.exhibitions {
+    display: flex;
+    flex-direction: row;
+    gap: 5vh;
+    padding-left: 7%;
+    padding-right: 5%;
+}
+.hero-image {
+    height: 70vh;
+}
+.ticket-img1,
+.ticket-img2,
+.ticket-img3,
+.ticket-img4 {
+    height: 375px;
+    max-width: 600px;
+}
+.rectangle1,
+.rectangle2,
+.rectangle3,
+.rectangle4 {
+    height: 350px;
+    max-width: 600px;
+}
+.ticket-info {
+    display: none;
+}
+.more-info {
+    display: flex;
+    padding-right: 5%;
+}
+.events-ticket-info {
+    display: flex;
+    justify-content: center;
+    text-align: center;
+    padding-left: 10%;
+    padding-right: 10%;
+}
+.events-img {
+    height: 315px;
+}
+.events-card1,
+.events-card2,
+.events-card3 {
+    max-width: 700px;
+    height: 570px;
+}
+.events {
+    display: flex;
+    flex-direction: column;
+    padding-left: 25%;
+    padding-right: 25%;
+}
+.footer-section {
+    display: flex;
+    flex-direction: row;
+    gap: 40vh;
+    padding-left: 5%;
+    padding-right: 5%;
+    align-items: center;
+}
+footer {
+    height: 80px;
+}
+}
+
+@media screen and (min-width: 1440px)  {
+.page-title {
+    font-size: 50px;
+}
+.home-text {
+    font-size: 20px;
+    padding-left: 15%;
+    padding-right: 15%;
+}
+.ticket-title {
+    font-size: 30px;
+}
+.events-title {
+    font-size: 30px;
+}
+.events-card1,
+.events-card2,
+.events-card3 {
+    max-width: 700px;
+    height: 620px;
+}
+.ticket-date {
+    font-size: 22px;
+}
+nav {
+    display: flex;
+    gap: 2rem;
+    font-size: 20px;
+    padding-left: 12%;
+
+}
 }
