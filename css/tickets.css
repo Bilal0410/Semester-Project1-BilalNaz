@@ -10,7 +10,16 @@ body {
     flex-direction: column;
 }
 html {
+    box-sizing: border-box;
     height: 100%;
+}
+html:focus-within {
+    scroll-behavior: smooth;
+}
+*,
+*::before,
+*::after {
+    box-sizing: inherit;
 }
 header {
     width: 100%;
@@ -24,13 +33,14 @@ header {
     align-items: center;
 }
 .logo {
-    width: 9vh;
+    width: 55px;
+    height: 55px;
 }
 nav {
     display: flex;
     flex-direction: row;
     gap: 5px;
-    font-size: 2.5vh;
+    font-size: 15px;
     text-decoration: none;
 }
 a {
@@ -45,9 +55,12 @@ a {
     text-align: center;
     font-family: Raleway;
     font-weight: 700;
-    font-size: 4vh;
+    font-size: 28px;
     margin-top: 2vh;
     padding: 2vh;
+}
+p {
+    font-size: 14px;
 }
 input,
 select,
@@ -60,6 +73,7 @@ textarea {
 }
 label {
     font-family: Raleway;
+    font-size: 14px;
     margin-left: 20px;
 }
 textarea {
@@ -92,7 +106,7 @@ button {
     padding: 5px 5px;
     font-family: Raleway;
     font-weight: 700;
-    font-size: 14px;
+    font-size: 12px;
     background-color: rgb(0, 0, 0);
     color: #ffffff;
     margin: 5vh 0vh;
@@ -100,7 +114,7 @@ button {
 .footer-section {
     text-align: center;
     font-family: Raleway;
-    font-size: 18px;
+    font-size: 12px;
     background: #6ea477;
     margin-top: 5vh;
 }
@@ -123,7 +137,7 @@ button {
 .copyright-text {
     text-align: center;
     font-family: Raleway;
-    font-size: 2vh;
+    font-size: 12px;
 }
 footer {
     width: 100%;
@@ -135,41 +149,56 @@ footer {
 
 /* Media Queries */
 @media screen and (min-width: 670px) {
-.header-content {
-    display: flex;
-    flex-direction: row;
-    align-items: center;
-    gap: 7vh;
-    padding: 0% 10%;
-    }
-
+.logo {
+    width: 84px;
+    height: 90px;
+}
 nav {
-    font-size: 20px;
+    gap: 2rem;
+    font-size: 18px;
+}
+.ticket-page-img {
+    height: 70vh;
 }
 }
 
 @media screen and (min-width: 900px) {
-.header-content {
-    display: flex;
-    flex-direction: row;
-    gap: 45vh;
+.copyright-text {
+    font-size: 14px;
 }
-.footer-section {
-    display: flex;
-    flex-direction: row;
-    gap: 40vh;
-    align-items: center;
-    padding-left: 5%;
-    padding-right: 5%;
+footer {
+    height: 70px;
+}
+}
+
+@media screen and (min-width: 1024px) {
+nav {
+    font-size: 20px;
+}
+.tickets-h1 {
+    font-size: 34px;
+}
+label {
+    font-size: 14px;
+}
+p {
+    font-size: 14px;
+    padding: 0rem 10rem;
+}
+.footer-section p {
+    font-size: 14px;
+}
+.copyright-text {
+    font-size: 14px;
 }
 }
 
 @media screen and (min-width: 1440px) {
 nav {
-    display: flex;
-    gap: 2rem;
-    font-size: 20px;
-    padding-left: 12%;
+    font-size: 22px;
+}
+.tickets-h1 {
+    font-size: 50px;
 }
 p {
     font-size: 18px;
@@ -182,6 +211,9 @@ button {
  font-size: 18px;   
 }
 label {
+    font-size: 20px;
+}
+p {
     font-size: 18px;
 }
 .ticket-page-img {

@@ -10,7 +10,16 @@ body {
     flex-direction: column;
 }
 html {
+    box-sizing: border-box;
     height: 100%;
+}
+html:focus-within {
+    scroll-behavior: smooth;
+}
+*,
+*::before,
+*::after {
+    box-sizing: inherit;
 }
 header {
     width: 100%;
@@ -24,13 +33,14 @@ header {
     align-items: center;
 }
 .logo {
-    width: 9vh;
+    width: 55px;
+    height: 55px;
 }
 nav {
     display: flex;
     flex-direction: row;
     gap: 5px;
-    font-size: 2.5vh;
+    font-size: 15px;
     text-decoration: none;
 }
 a {
@@ -48,12 +58,12 @@ h1 {
     margin: 1vw;
     font-family: Raleway;
     font-weight: 700;
-    font-size: 5vh;
+    font-size: 28px;
 }
 p {
     font-family: Raleway;
     font-weight: 500;
-    font-size: 2vh;
+    font-size: 14px;
     text-align: center;
     padding: 0vh 3vh;
 }
@@ -101,7 +111,7 @@ textarea {
 .footer-section {
     text-align: center;
     font-family: Raleway;
-    font-size: 2vh;
+    font-size: 12px;
     background: #6ea477;
     margin-top: 5vh;
 }
@@ -124,7 +134,7 @@ textarea {
 .copyright-text {
     text-align: center;
     font-family: Raleway;
-    font-size: 2vh;
+    font-size: 12px;
 }
 footer {
     width: 100%;
@@ -136,52 +146,60 @@ footer {
 
 /* Media Queries */
 @media screen and (min-width: 670px) {
-.header-content {
-    display: flex;
-    flex-direction: row;
-    align-items: center;
-    gap: 7vh;
-    padding: 0% 10%;
+.logo {
+    width: 84px;
+    height: 90px;
 }
 nav {
-font-size: 20px;
-}
-}
-@media screen and (min-width: 900px) {
-    .header-content {
-        display: flex;
-        flex-direction: row;
-        gap: 45vh;
-    }
-.footer-section {
-    display: flex;
-    flex-direction: row;
-    gap: 30vh;
-    align-items: center;
-    padding-left: 5%;
-    padding-right: 5%;
-}
-footer {
-    height: 80px;
-}
-}
-@media screen and (min-width: 1440px) {
-nav {
-    display: flex;
     gap: 2rem;
-    font-size: 20px;
-    padding-left: 12%;
+    font-size: 18px;
 }
 .contact-img {
     height: 70vh;
 }
+}
+
+@media screen and (min-width: 900px) {
+.copyright-text {
+    font-size: 14px;
+}
+footer {
+    height: 70px;
+}
+}
+
+@media screen and (min-width: 1024px) {
+nav {
+    font-size: 20px;
+}
+h1 {
+    font-size: 38px;
+}
 p {
-    font-size: 24px;
+    font-size: 20px;
 }
 label {
-    font-size: 24px;
+    font-size: 20px;
 }
 .submit-button {
-    font-size: 24px;
+    font-size: 20px;
+}
+.footer-section p {
+    font-size: 14px;
+}
+.copyright-text {
+    font-size: 14px;
+}
+}
+
+@media screen and (min-width: 1440px) {
+nav {
+    font-size: 22px;
+}
+h1 {
+    font-size: 50px;
+}
+.contact-img {
+    height: 70vh;
 }
 }

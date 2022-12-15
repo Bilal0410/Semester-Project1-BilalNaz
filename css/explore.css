@@ -10,7 +10,16 @@ body {
     flex-direction: column;
 }
 html {
+    box-sizing: border-box;
     height: 100%;
+}
+html:focus-within {
+    scroll-behavior: smooth;
+}
+*,
+*::before,
+*::after {
+    box-sizing: inherit;
 }
 header {
     width: 100%;
@@ -24,13 +33,14 @@ header {
     align-items: center;
 }
 .logo {
-    width: 9vh;
+    width: 55px;
+    height: 55px;
 }
 nav {
     display: flex;
     flex-direction: row;
     gap: 5px;
-    font-size: 2.5vh;
+    font-size: 15px;
     text-decoration: none;
 }
 a {
@@ -39,7 +49,8 @@ a {
 }
 h4 {
     text-align: center;
-    font-size: 2vh;
+    font-size: 11.36px;
+    font-weight: 700;
     margin: 2vh 1vh 2vh 1vh;
 }
 .tickets-text {
@@ -47,6 +58,8 @@ h4 {
     text-decoration: underline;
 }
 .kids-img {
+    width: 100%;
+    height: 65vw;
     padding-bottom: 3vh;
 }
 h1 {
@@ -54,32 +67,32 @@ h1 {
     margin: 1vw;
     font-family: Raleway;
     font-weight: 700;
-    font-size: 5vh;
+    font-size: 28px;
 }
 h2 {
     text-align: center;
     font-family: Raleway;
     font-weight: 700;
-    font-size: 3vh;
+    font-size: 17px;
     margin-bottom: auto;
 }
 p {
     font-family: Raleway;
     font-weight: 500;
-    font-size: 2vh;
+    font-size: 12px;
     text-align: center;
     padding: 0vh 3vh;
 }
 .teachers-img {
     max-height: 50vh;
-    width: fit-content;
+    max-width: 30vh;
     display: block;
-    margin: 5vh auto;
+    margin: 30px auto;
 }
 .footer-section {
     text-align: center;
     font-family: Raleway;
-    font-size: 2vh;
+    font-size: 12px;
     background: #6ea477;
     margin-top: 5vh;
 }
@@ -114,46 +127,69 @@ footer {
 
 /* Media Queries */
 @media screen and (min-width: 670px) {
-.header-content {
-    display: flex;
-    flex-direction: row;
-    align-items: center;
-    gap: 7vh;
-    padding: 0% 10%;
+.logo {
+    width: 84px;
+    height: 90px;
 }
 nav {
-    font-size: 20px;
+    gap: 2rem;
+    font-size: 18px;
+}
+h4 {
+    font-size: 16px;
+}
+.kids-img {
+    height: 70vh;
 }
 }
 
 @media screen and (min-width: 900px) {
-.header-content {
-    display: flex;
-    flex-direction: row;
-    gap: 45vh;
+h4 {
+    font-size: 18px;
 }
-.footer-section {
-    display: flex;
-    flex-direction: row;
-    gap: 40vh;
-    align-items: center;
-    padding-left: 5%;
-    padding-right: 5%;
-    }
+footer {
+    height: 70px;
+}
+}
+
+@media screen and (min-width: 1024px) {
+h1 {
+    font-size: 34px;
+}
+h2 {
+    font-size: 24px;
+}
+nav {
+    font-size: 20px;
+}
+p {
+    padding: 0rem 10rem;
+}
+.footer-section p {
+    font-size: 14px;
+}
+.copyright-text {
+    font-size: 14px;
+}
 }
 
 @media screen and (min-width: 1440px) {
+h1 {
+    font-size: 50px;
+}
+h2 {
+    font-size: 30px;
+}
 nav {
-    display: flex;
-    gap: 2rem;
-    font-size: 20px;
-    padding-left: 12%;
+    font-size: 22px;
+}
+h4 {
+    font-size: 22px;
 }
 .kids-img {
     height: 70vh;
 }
 p {
-    padding-left: 15%;
-    padding-right: 15%;
+    font-size: 20px;
 }
 }
