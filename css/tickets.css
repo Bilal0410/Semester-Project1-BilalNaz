@@ -121,6 +121,12 @@ button {
     color: #ffffff;
     margin: 5vh 0vh;
 }
+button:hover {
+    background: #000;
+    font-size: 16px;
+    transition: all .500s;
+    border-radius: 5px;
+}
 .footer-section {
     text-align: center;
     font-family: Raleway;
@@ -249,6 +255,12 @@ button {
  width: 200px;
  height: 40px;
  font-size: 18px;   
+}
+button:hover {
+    background: #000;
+    font-size: 20px;
+    transition: all .500s;
+    border-radius: 5px;
 }
 label {
     font-size: 20px;

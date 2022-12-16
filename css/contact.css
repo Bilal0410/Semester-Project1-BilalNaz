@@ -116,7 +116,12 @@ textarea {
     border-radius: 10px;
     font-family: Raleway;
     font-weight: 700;
-
+}
+.submit-button:hover {
+    background: #000;
+    font-size: 16px;
+    transition: all .500s;
+    border-radius: 5px;
 }
 .footer-section {
     text-align: center;
@@ -213,6 +218,12 @@ label {
 }
 .submit-button {
     font-size: 20px;
+}
+.submit-button:hover {
+    background: #000;
+    font-size: 24px;
+    transition: all .500s;
+    border-radius: 5px;
 }
 .footer-section p {
     font-size: 14px;
