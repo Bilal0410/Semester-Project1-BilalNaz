@@ -43,6 +43,10 @@ nav {
     font-size: 15px;
     text-decoration: none;
 }
+a.nav, a:hover {
+    background: #6ea477;
+    transition: .5s;
+}
 a {
     text-decoration: none;
     color: #000000;
@@ -73,9 +77,9 @@ p {
 }
 .qr-code {
     max-height: 30vh;
-    width: fit-content;
+    max-width: 30vh;
     display: block;
-    margin: auto;
+    margin: 10px auto;
 }
 .footer-section {
     text-align: center;
@@ -110,7 +114,7 @@ footer {
     border-top: 1px solid #000;
     background: linear-gradient(180deg, #3FA752 0%, #000000 100%);
 }
-/* Media Queries*/
+/* Media Queries */
 @media screen and (min-width: 670px) {
 .logo {
     width: 84px;
