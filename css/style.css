@@ -42,10 +42,17 @@ nav {
     gap: 5px;
     font-size: 15px;
     text-decoration: none;
+    transition: all .300s ease-out;
 }
-a.nav, a:hover {
-    background: #6ea477;
-    transition: .5s;
+.nav-home:hover,
+.nav-tickets:hover,
+.nav-explore:hover,
+.nav-contact:hover,
+.nav-about:hover {
+    background: #3A994C;
+    font-size: 18px;
+    transition: all .500s;
+    border-radius: 5px;
 }
 a {
     text-decoration: none;
@@ -176,6 +183,18 @@ margin: 1rem;
     background-color: #fff;
     color: #797171;
     margin-bottom: 2vh;
+}
+.ticket-button1:hover,
+.ticket-button2:hover,
+.ticket-button3:hover,
+.ticket-button4:hover,
+.ticket-button5:hover,
+.ticket-button6:hover,
+.ticket-button7:hover {
+    background: #fff;
+    font-size: 16px;
+    transition: all .500s;
+    border-radius: 5px;
 }
 .ticket-button2 {
     border-radius: 10px;
@@ -322,7 +341,7 @@ footer {
     background: linear-gradient(180deg, #3FA752 0%, #000000 100%);
 }
 
-/* Media Query for Ipad and Tablet */
+/* Media Queries */
 @media screen and (min-width: 670px) {
 .logo {
     width: 84px;
@@ -331,6 +350,16 @@ footer {
 nav {
     gap: 2rem;
     font-size: 18px;
+}
+.nav-home:hover,
+.nav-tickets:hover,
+.nav-explore:hover,
+.nav-contact:hover,
+.nav-about:hover {
+    background: #3A994C;
+    font-size: 20px;
+    transition: all .500s;
+    border-radius: 5px;
 }
 h4 {
     font-size: 16px;
@@ -346,7 +375,7 @@ h4 {
     padding-right: 5%;
 }
 }
-/* Media Query for small screen and laptop */
+
 @media screen and (min-width: 900px) {
 h4 {
     font-size: 18px;
@@ -356,8 +385,9 @@ h4 {
     flex-direction: row;
     gap: 5vh;
     padding-left: 7%;
-    padding-right: 5%;
+    padding-right: 7%;
 }
+
 .ticket-img1,
 .ticket-img2,
 .ticket-img3,
@@ -401,6 +431,7 @@ footer {
     height: 70px;
 }
 }
+
 @media screen and (min-width: 1024px) {
 .page-title {
     font-size: 40px;
@@ -413,6 +444,28 @@ footer {
 }
 nav {
     font-size: 20px;
+}
+.nav-home:hover,
+.nav-tickets:hover,
+.nav-explore:hover,
+.nav-contact:hover,
+.nav-about:hover {
+    background: #3A994C;
+    font-size: 22px;
+    transition: all .500s;
+    border-radius: 5px;
+}
+.ticket-button1:hover,
+.ticket-button2:hover,
+.ticket-button3:hover,
+.ticket-button4:hover,
+.ticket-button5:hover,
+.ticket-button6:hover,
+.ticket-button7:hover {
+    background: #fff;
+    font-size: 20px;
+    transition: all .500s;
+    border-radius: 5px;
 }
 .home-text {
     font-size: 20px;
@@ -429,6 +482,26 @@ nav {
 @media screen and (min-width: 1440px)  {
 nav {
     font-size: 22px;
+}
+.nav-home:hover,
+.nav-tickets:hover,
+.nav-explore:hover,
+.nav-contact:hover,
+.nav-about:hover {
+    background: #3A994C;
+    font-size: 24px;
+    transition: all .500s;
+    border-radius: 5px;
+}
+.nav-home:hover,
+.nav-tickets:hover,
+.nav-explore:hover,
+.nav-contact:hover,
+.nav-about:hover {
+    background: #fff;
+    font-size: 24px;
+    transition: all .500s;
+    border-radius: 5px;
 }
 .page-title {
     font-size: 50px;
@@ -486,4 +559,16 @@ h4 {
 .ticket-button7 {
     font-size: 18px;
 }
+}
+
+@media screen and (min-width: 1800px) {
+.exhibitions {
+    gap: 5vh;
+    padding-left: 14%;
+    padding-right: 14%;
+    }
+.events {
+    padding-left: 35%;
+    padding-right: 35%;
+    }
 }

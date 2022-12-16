@@ -43,9 +43,15 @@ nav {
     font-size: 15px;
     text-decoration: none;
 }
-a.nav, a:hover {
-    background: #6ea477;
-    transition: .5s;
+.nav-home:hover,
+.nav-tickets:hover,
+.nav-explore:hover,
+.nav-contact:hover,
+.nav-about:hover {
+    background: #3A994C;
+    font-size: 18px;
+    transition: all .500s;
+    border-radius: 5px;
 }
 a {
     text-decoration: none;
@@ -114,6 +120,7 @@ footer {
     border-top: 1px solid #000;
     background: linear-gradient(180deg, #3FA752 0%, #000000 100%);
 }
+
 /* Media Queries */
 @media screen and (min-width: 670px) {
 .logo {
@@ -123,6 +130,16 @@ footer {
 nav {
     gap: 2rem;
     font-size: 18px;
+}
+.nav-home:hover,
+.nav-tickets:hover,
+.nav-explore:hover,
+.nav-contact:hover,
+.nav-about:hover {
+    background: #3A994C;
+    font-size: 20px;
+    transition: all .500s;
+    border-radius: 5px;
 }
 .order-img {
     height: 70vh;
@@ -144,7 +161,17 @@ footer {
 @media screen and (min-width: 1024px) {
 nav {
     font-size: 20px;
-}    
+}   
+.nav-home:hover,
+.nav-tickets:hover,
+.nav-explore:hover,
+.nav-contact:hover,
+.nav-about:hover {
+    background: #3A994C;
+    font-size: 22px;
+    transition: all .500s;
+    border-radius: 5px;
+}
 .order-h1 {
     font-size: 38px;
 }
@@ -159,7 +186,17 @@ p {
 @media screen and (min-width: 1440px) {
 nav {
     font-size: 22px;
-}    
+} 
+.nav-home:hover,
+.nav-tickets:hover,
+.nav-explore:hover,
+.nav-contact:hover,
+.nav-about:hover {
+    background: #3A994C;
+    font-size: 24px;
+    transition: all .500s;
+    border-radius: 5px;
+} 
 .order-h1 {
     font-size: 50px;
 }
