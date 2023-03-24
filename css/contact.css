@@ -77,6 +77,8 @@ p {
     text-align: center;
     padding: 0vh 3vh;
 }
+
+
 input,
 textarea {
     border: 1px solid grey;
@@ -110,19 +112,79 @@ textarea {
     display: flex;
     flex-direction: column;
 }
-.submit-button {
-    background: #000;
-    color: #F9FAFB;
+.submit-btn {
     border-radius: 10px;
+    padding: 15px 5px;
     font-family: Raleway;
     font-weight: 700;
+    font-size: 12px;
+    background-color: rgb(0, 0, 0);
+    color: #ffffff;
+    margin: 5vh 0vh;
 }
-.submit-button:hover {
+.submit-btn:hover {
     background: #000;
     font-size: 16px;
     transition: all .500s;
     border-radius: 5px;
 }
+
+  .container {
+    max-width: 760px;
+    margin: 0 auto;
+  }
+  
+  form {
+    padding: 2em;
+    background: white;
+    border-radius: 1rem;
+  }
+  
+  input {
+    width: 100%;
+    margin-top: 2px;
+    padding: 10px;
+    font-size: 16px;
+  }
+  #message {
+    height: 110px;
+  }
+  
+  .submit-btn {
+    background: rgb(0, 0, 0);
+    border: none;
+    width: 200px;
+    padding: 1rem;
+    color: white;
+    margin-top: 10px;
+    cursor: pointer;
+    border-radius: 0.2rem;
+  }
+  
+  .home-btn {
+    background: rgb(11, 91, 133);
+    border: none;
+    width: 100px;
+    padding: 0.5rem;
+    color: white;
+    cursor: pointer;
+    border-radius: 0.2rem;
+    border-color: black;
+  }
+  
+  label {
+    display: block;
+    margin-top: 1rem;
+  }
+  
+  .form-error {
+    display: none;
+    color: red;
+    font-size: 0.9rem;
+    margin-top: 2px;
+  }
+
+
 .footer-section {
     text-align: center;
     font-family: Raleway;
