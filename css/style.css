@@ -84,6 +84,18 @@ font-family: Raleway;
 font-weight: 500;
 margin: 1rem;
 }
+.latest-events {
+    color: #3FA752;
+    font-family: Raleway;
+    font-weight: 900;
+    margin: 1rem;
+    text-align: center;
+    font-size: 22px;
+}
+.events-ca {
+    color: #3FA752;
+    text-decoration: underline;
+}
 .exhibition-h1 {
     text-align: center;
     font-family: Raleway;
